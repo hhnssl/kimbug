@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1교시</th> <!-- 각 줄의 대표니까 이 부분은 th로 처리-->
+                <td rowspan="2">왕초보 HTML &amp; CSS</td> <!-- html 에는 &를 쓸 수 없음. &를 의미하는 &amp; -->
+                <td>모각코</td>
+                <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                <td>모각코</td>
+                <td rowspan="2">왕초보 HTML &amp; CSS</td>
+            </tr>
+            <tr>
+                <th scope="row">2교시</th>
+                <!--이미 위의 칸이 rowspan을 써서 두 칸을 먹어버렸으니 얘는 삭제를 해야함<td></td>-->
+                <td rowspan="2">JavaScript 스킬업</td>
+                <!-- <td></td> -->
+                <td rowspan="2">JavaScript 스킬업</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <th scope="row">3교시</th>
+                <td>JavaScript 시작반</td>
+                <!-- <td></td> -->
+                <td>JavaScript 시작반</td>
+                <!-- <td></td> -->
+                <td>JavaScript 시작반</td>
+            </tr>
+            <tr>
+                <th colspan="6"  scope="row">점심시간</th> <!-- td 아님~ -->
+                <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th scope="row">4교시</th>
+                <td>SASS 기초반</td>
+                <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+                <td rowspan="2">Open Seminar</td>
+                <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+                <td>SASS 기초반</td>
+            </tr>
+            <tr>
+                <th scope="row">5교시</td>
+                <td>모각코</td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+                <td>모각코</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!-- row: 가로줄 -->
+<!-- rowspan: 위아래 합병 -->
+<!-- colsspan: 좌우 합병 -->
+<!-- scope="ros|col": th 한테만 쓸 수 있는 태그, 사용자에게는 별 차이 없지만 브라우저가 구분하기 편함 -->
