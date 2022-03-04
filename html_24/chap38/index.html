@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Group</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="subscription">
+            <h1>Manage Subscriptions</h1>
+            <p>
+                You can follow the discussion on @kimbug without to leave a
+                comment. Cool, huh? <br />
+                Just enter your email address in the form here below and you are
+                all set
+            </p>
+
+            <!-- 제출이 필요한 요소이기 때문에 form 태그 사용 -->
+            <form action="" method="GET" class="input-group">
+                <!-- 보안이 크게 중요하지 않다고 판단하여 GET -->
+                <input type="email" placeholder="Your Email" />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </body>
+</html>
