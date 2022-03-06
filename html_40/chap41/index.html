@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- 음악 재생은 순서가 중요하니까 Ordered List -->
+        <ol class="music-player">
+            <li class="music-play-item">
+                <img
+                    src="https://m.media-amazon.com/images/I/814Rp76DidL._SS500_.jpg"
+                    alt="러브 엑스 마키나(앨범 이름임)"
+                    lang="ko"
+                    class="music-album-cover"
+                />
+                <div class="music-info">
+                    <div class="music-info-detail">
+                        <h1>
+                            <span lang="ko">러브 엑스 마키나</span>Love Ex
+                            Machina
+                        </h1>
+                        <!-- <h1>러브 엑스 마키나 Love Ex Machina</h1> 이렇게 해도 상관 없음. 좀 더 정확한 마크업을 위함임 -->
+                        <strong>MLSL (밀레니엄 살롱)</strong>
+                    </div>
+                    <span>
+                        <span class="sr-only">Duration</span>
+                        04:09
+                    </span>
+                    <!-- 여기서 strong과 span을 쓴 이유: 개발자가 자신의 기준에 중요하다 판단하면 strong 아니다 판단하면 span을 쓴 것임.  -->
+                </div>
+                <audio src="./assets/music-1.mp3" class="music-audio"></audio>
+                <!-- 오디오 플레이어를 나타내려면 controls 속성을 써야하지만 js로 처리할 것이므로 뺌 -->
+            </li>
+            <li class="music-play-item">
+                <img
+                    src="http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/660/591/80660591_1560403300605_1_600x600.JPG"
+                    alt="올라가"
+                    lang="ko"
+                    class="music-album-cover"
+                />
+                <div class="music-info">
+                    <div class="music-info-detail">
+                        <h1>
+                            <span lang="ko">올라가</span>
+                        </h1>
+                        <strong>권선홍</strong>
+                    </div>
+                    <span>
+                        <span class="sr-only">Duration</span>
+                        03:33
+                    </span>
+                </div>
+                <audio
+                    src="./assets/html-practice_13-music-player_assets_music-2.mp3"
+                    class="music-audio"
+                ></audio>
+            </li>
+        </ol>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
