@@ -1,0 +1,33 @@
+<section>
+    <!-- section은 Sectioning Elements이기 때문에 반드시! heading  태그를 써주자 -->
+    <h1>What's happening?</h1>
+
+    <form action="#" method="POST">
+        <img src="#" alt="@hhnssl" />
+        <textarea placeholder="What's happening?" maxlength="280"></textarea>
+
+        <!-- input? file?은 css 가 안 먹히니까 button을 따로 만들어줌 -->
+        <button type="button" aria-label="Upload files">
+            <!-- Icon -->
+        </button>
+        <input type="file" multiple accept="image/*, video/*" />
+        <!-- 
+            multiple: 여러가지 확장자의 파일을 열 수 이씀 
+            accept: 허용할 확장자 설정
+        -->
+        <button type="button" aria-label="Search GIFs...">
+            <!-- Icon -->
+        </button>
+        <button type="button" aria-label="Create a poll">
+            <!-- Icon -->
+        </button>
+        <button type="button" aria-label="Choose emoji">
+            <!-- Icon -->
+        </button>
+        <strong aria-label="0 out of 280 characters"></strong>
+        <button type="button" aria-label="Add another Tweet">
+            <!-- Icon -->
+        </button>
+        <button type="submit">Tweet</button>
+    </form>
+</section>
